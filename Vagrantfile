@@ -70,5 +70,6 @@ Vagrant.configure("2") do |config|
     sh -c "echo 'deb http://download.owncloud.org/download/repositories/stable/Ubuntu_16.04/ /' > /etc/apt/sources.list.d/owncloud.list"
     apt-get update
     apt-get install -y owncloud php-ldap
+    service apache2 restart
   SHELL
 end
