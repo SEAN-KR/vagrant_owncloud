@@ -69,6 +69,6 @@ Vagrant.configure("2") do |config|
     apt-key add - < Release.key
     sh -c "echo 'deb http://download.owncloud.org/download/repositories/stable/Ubuntu_16.04/ /' > /etc/apt/sources.list.d/owncloud.list"
     apt-get update
-    apt-get install -y owncloud
+    apt-get install -y owncloud php-ldap
   SHELL
 end
